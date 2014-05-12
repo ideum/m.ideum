@@ -1,0 +1,615 @@
+/* main.css */
+
+/* ----- Base elements ----- */
+body{
+	text-align: center;
+	font-family: Lato;
+}
+
+h2{
+	margin: 0 0 -.2em 0;
+	padding: .5em 1em 0;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 2.2em;
+	line-height: 1.25em;
+	color: rgb(55,35,0);
+}
+
+h3{
+	margin: 10px 0 -7px;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.6em;
+	color: rgb(55,35,0);
+}
+
+h5{
+	margin: -20px 1.7em 20px;
+	padding: 12px 0 0;
+	text-align: left;
+	font-weight: 300;
+	font-style: normal;
+	font-size: .9em;
+	color: rgb(84,84,84);
+}
+
+p{
+	padding: 0em 1.5em .5em;
+	text-align: left;
+	font-weight: 300;
+	font-size: 1.2em;
+	line-height: 1.60em;
+	color: rgb(84,84,84);
+}
+
+dd{
+	margin: 0;
+}
+
+select{
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0.5em 1em;
+	margin: 1px 0 0 -2px;
+	width: 95%%;
+	border-radius: 0px;
+	border-color: #000;
+	background-color: rgb(64, 132, 254);
+	color: #FFF;
+	background-image: url('../img/icons/drop_arrow.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 54px;
+	-webkit-appearance: none;
+}
+
+option{
+
+}
+
+/* ----- Sections ----- */
+#coffeeTableBanner{
+	text-align: center;
+	background-color: transparent;
+	margin-top: -87px;
+}
+
+#fullSection{
+	width: 100%;
+	margin: 0 0 -19px;
+}
+
+#cardSection, #cardSectionComplete{
+	margin: 0;
+	padding: 1em 1.5em;
+	width: 100%;
+}
+
+#cardSectionComplete{
+	border-radius: 35px;
+}
+
+#accordionSection{
+	margin: -15px 0 0;
+}
+
+#specSheetBar{
+	color: white;
+	margin: 0 0 0 -35px;
+	text-align: center;
+}
+
+#textBar{
+	color: white;
+	text-align: center;
+}
+
+/* ----- top bar styles ----- */
+.top-bar, .top-bar.expanded, .top-bar.expanded .title-area, .rentals-top-bar{
+	background: rgb(243,243,243); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(243,243,243) 0%, rgb(199,199,199) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(243,243,243)), color-stop(100%,rgb(199,199,199))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgb(243,243,243) 0%,rgb(199,199,199) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgb(243,243,243) 0%,rgb(199,199,199) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgb(243,243,243) 0%,rgb(199,199,199) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgb(243,243,243) 0%,rgb(199,199,199) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#c7c7c7',GradientType=0 ); /* IE6-9 */
+	text-align: left;
+}
+
+.top-bar .title-area{
+	height: 50px;
+}
+
+.top-bar-section{
+	margin-top: 0px;
+}
+
+.top-bar .name, .top-bar.expanded .name{
+	margin: -5px -40px 5px; 
+}
+
+.top-bar .toggle-topbar.menu-icon{
+	margin-top: -14px;
+}
+
+.top-bar .toggle-topbar.menu-icon a::after{
+	box-shadow: 0 10px 0 1px #888,0 16px 0 1px #888,0 22px 0 1px #888;
+}
+
+.top-bar-section ul li>a{
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+/* ----- Card styles ----- */
+#cardHead{
+	width: 100%;
+	border-radius: 35px 35px 0 0;
+	border-color: black black gray;
+	border-style: solid;
+	border-width: 1px 1px 0;
+	background-color: white;
+}
+
+#cardContent{
+	border-radius: 0 0 35px 35px;
+	border-color: gray black black;
+	border-style: solid;
+	border-width: 0px 1px 1px;
+	-moz-box-shadow: 0 1px 1px black;
+	-webkit-box-shadow: 0 1px 1px black;
+	box-shadow: 0 1px 1px black;
+	background-color: white;
+}
+
+#cardContent h4{
+	padding: 0em 1.5em .5em;
+	margin: 5px 0 -10px -5px;
+	text-align: left;
+	font-weight: 300;
+	font-size: 1.5em;
+	line-height: 1.1em;
+	color: rgb(84,84,84);
+}
+
+#cardContent ul{
+	text-align: left;
+	margin-left: 12px;
+}
+
+#cardContent li{
+	padding: 0em 1.5em .5em 0;
+	text-align: left;
+	font-weight: 300;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: rgb(84,84,84);
+}
+
+#cardContent a{
+	text-decoration: none;
+}
+
+#cardContent a:visited, #cardContent a:link{
+	text-decoration: none;
+	color: rgb(30,100,187);
+}
+
+p.inline{
+	margin: 12px 0 -5px;
+}
+
+.full{
+	width: 100%;
+}
+
+ul#cardInfo{
+	text-align: center;
+}
+
+ul#cardInfo li{
+	display: inline-block;
+}
+
+/* ----- CardComplete Section ----- */
+
+#outerCardSectionComplete{
+	padding: 1em 1.5em;
+}
+
+/* ----- Full section styling ----- */
+
+#fullSection ul{
+	padding: 1em;
+}
+
+#fullSection ul li{
+	display: inline-block;
+	line-height: 45px;
+	padding-right: 1.5em;
+	margin-right: 15px;
+	font-size: .7em;
+	color: #AAAAAA;
+}
+
+/* ----- Accordian styling ----- */
+#accordionSection dd a{
+	text-align: left;
+	font-family: Lato;
+	text-decoration: none;
+	font-weight: 300;
+
+	background: background: rgb(225,225,225); /* Old browsers */
+	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -moz-linear-gradient(top, rgb(225,225,225) 0%, rgb(255,255,255) 100%); /* FF3.6+ */
+	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(225,225,225)), color-stop(100%,rgb(255,255,255))); /* Chrome,Safari4+ */
+	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -webkit-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* Chrome10+,Safari5.1+ */
+	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -o-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* Opera 11.10+ */
+	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -ms-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* IE10+ */
+	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, linear-gradient(to bottom, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */;
+}
+
+#accordionSection dd.active a{
+	background: background: rgb(225,225,225); /* Old browsers */
+	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -moz-linear-gradient(top, rgb(225,225,225) 0%, rgb(255,255,255) 100%); /* FF3.6+ */
+	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(225,225,225)), color-stop(100%,rgb(255,255,255))); /* Chrome,Safari4+ */
+	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -webkit-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* Chrome10+,Safari5.1+ */
+	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -o-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* Opera 11.10+ */
+	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -ms-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* IE10+ */
+	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, linear-gradient(to bottom, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */;
+}
+
+#accordionSection dd a{
+	border-bottom: 2px solid rgb(148,148,148);
+}
+
+#accordionSection dd a h3{
+	font-weight: 300;
+	margin: 0 20% .2em 0;
+}
+
+#accordionSection dd a h6{
+	font-weight: 300;
+	margin: 0 20% 0 0 ;
+	font-size: 1.3em;
+}
+
+#accordionSection dd .content{
+	text-align: left;
+	overflow: hidden;
+	padding: 0;	
+}
+
+#accordionSection dd .content p, #accordionSection dd .content ul{
+	color: gray;
+}
+
+#accordionSection dd .content ul li{
+	font-weight: 300;
+}
+
+#accordionSection dd .content ul li.listHeader{
+	font-weight: 400;
+	list-style: none;
+}
+
+.projectedCapacitive{width: 40%;}
+.stayConnected{width: 55%;}
+.vandalProof{width: 50%;}
+.expansiveMedia{width: 50%;}
+.integratedi7{width: 75%; margin: 0 14%;}
+.ruggedized{width: 45%;}
+
+
+/* ----- Other id's ---- */
+#seperator{
+	height: 87px;
+	margin-top: -97px;
+}
+
+#specSheetBar ul{
+	display: inline-block;
+	list-style-image: none;
+}
+
+#specSheetBar ul li.listHeader{
+	float: left;
+	list-style-type: none;
+	list-style-image: none;
+	background: none;
+}
+
+#specSheetBar ul li{
+	float: left;
+	font-size: .65em;
+	list-style-type: none;
+	margin: 0 -9px;
+	padding: 4px 27px;
+	background: url('../img/icons/icon_pdf.png') no-repeat center left;
+}
+
+.draftingNumber2{
+	top: -20px;
+	margin: 0 0 0 45px;
+	float: left;
+}
+
+.superSelect{
+	background-color: black;
+	padding: .2em 0;
+}
+
+.rentals-top-bar, .rentals-top-bar ul{
+	list-style-type: none;
+	padding: 15px 0 0 8px;
+	margin: -20px 0;
+}
+
+footer ul{
+	list-style-type: none;
+	text-align: left;
+}
+
+footer ul li{
+	padding: 0.4em 0;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color: #444444;
+}
+ 
+/* ----- Text colors and transforms----- */
+.listHeader{
+	list-style-type: none;
+	font-weight: 400;
+}
+
+.floatRight{
+	float: right;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.indent{padding-left: 1em;}
+
+.leftText{
+	text-align: left;
+}
+
+.centerText{
+	text-align: center;
+}
+
+.heavyText{
+	font-weight: 400;
+}
+
+.noMargin, #fullSection.noMargin{
+	margin: 0;
+}
+
+h2.aboveImage{
+	padding: .5em 1em 1em;
+}
+
+p.legalText{
+	font-size: .75em;
+	padding: 1em 2em;
+}
+
+p.footerText{
+	font-size: 1em;
+	padding: 1em 2.5em;
+}
+
+.whiteText{
+	color: white;
+}
+
+.grayText{
+	color: rgb(136,136,136);
+}
+
+.darkishBlueText{
+	color: rgb(9,62,96);
+	padding: .25em 1.5em;
+}
+
+.darkBlueText{
+	color: rgb(72,64,120);
+}
+
+.cyanText{
+	color: cyan;
+}
+
+.darkBrownText{
+	color: rgb(55,35,0);
+}
+
+.darkText{
+	color: rgb(84,84,84);
+}
+
+.invisibleText{
+	color: rgba(0,0,0,0);
+}
+
+/* ----- Bacgkround classes ----- */
+
+	/* ----- Icon Backgrounds ----- */
+.bluetooth{background: url("../img/icons/logo_bluetooth.png") center left no-repeat; padding-left:31px;}
+.wifi{background: url("../img/icons/logo_wifi.png") center left no-repeat; padding-left:55px;}
+.usb{background: url("../img/icons/logo_usb.png") center left no-repeat; padding-left:50px;}
+.hdmi{background: url("../img/icons/logo_hdmi.png") center left no-repeat; padding-left:66px;}
+.widi{background: url("../img/icons/logo_widi.png") center left no-repeat; padding-left:30px;}
+.rfid{background: url("../img/icons/logo_rfid.png") center left no-repeat; padding-left: 35px;}
+
+	/* ----- Gradients ----- */
+.gradientBg-60{
+	background: rgb(246,248,231); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgb(246,248,231) 0%, rgb(255,255,255) 60%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgb(246,248,231)), color-stop(60%,rgb(255,255,255))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgb(246,248,231) 0%,rgb(255,255,255) 60%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgb(246,248,231) 0%,rgb(255,255,255) 60%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgb(246,248,231) 0%,rgb(255,255,255) 60%); /* IE10+ */
+	background: linear-gradient(135deg, rgb(246,248,231) 0%,rgb(255,255,255) 60%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8e7', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.gradientBg-90{
+	background: rgb(246,248,231); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgb(246,248,231) 0%, rgb(255,255,255) 90%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgb(246,248,231)), color-stop(90%,rgb(255,255,255))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgb(246,248,231) 0%,rgb(255,255,255) 90%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgb(246,248,231) 0%,rgb(255,255,255) 90%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgb(246,248,231) 0%,rgb(255,255,255) 90%); /* IE10+ */
+	background: linear-gradient(135deg, rgb(246,248,231) 0%,rgb(255,255,255) 90%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8e7', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.grayGradient{
+	background: white url('../img/bg_cup_of_joe.png') repeat-x;
+}
+
+.fourkBgGradient{
+	background: rgb(239,239,239); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgb(239,239,239) 0%, rgb(244,244,244) 90%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgb(244,244,244)), color-stop(90%,rgb(255,255,255))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, rgb(239,239,239) 0%,rgb(244,244,244) 90%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgb(239,239,239) 0%,rgb(244,244,244) 90%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgb(239,239,239) 0%,rgb(244,244,244) 90%); /* IE10+ */
+	background: linear-gradient(135deg, rgb(239,239,239) 0%,rgb(244,244,244) 90%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8e7', endColorstr='#ffffff',GradientType=1 );
+}
+
+	/* ----- Textures ----- */
+.textureCoffeeTableConnected, .textureBuiltInAmericano, .textureTwoYearWarranty, .textureDraftingTwoYearWarranty{
+	position: relative;
+}
+
+.textureCoffeeTableConnected:after, .textureBuiltInAmericano:after, .textureTwoYearWarranty:after, .textureDraftingTwoYearWarranty:after{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	content: "";
+}
+.textureCoffeeTableConnected:after{	
+	background-image: url('../img/coffeetable/bg_coffee_table_connected.png');
+	background-color: black;
+} 
+
+.textureBuiltInAmericano:after{	
+	background-image: url('../img/coffeetable/bg_built_in_americano.png');
+	background-color: black;
+}
+
+.textureTwoYearWarranty:after{
+	background-image: url('../img/redefined/photo_two_year_warranty.png');
+	background-color: black;
+}
+
+.textureDraftingTwoYearWarranty:after{
+	background-image: url('../img/drafting/bg_2_year_warranty.png');
+}
+
+.coffeeSpecSheetBar{
+	background: url('../img/coffeetable/bg_spec_sheets.png') repeat-x;
+}
+
+.bg46DraftingBg{
+	background-image: url('../img/drafting/drop-downs/bg_drop-downs.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.bg46DraftingBg-repeat{
+	background-image: url('../img/drafting/drop-downs/bg_drop-downs.png');
+	background-size: 100%;
+}
+
+.header4kBg{
+	background-image: url('../img/4k/intro-bg.png');
+	background-size: 100% 100%;
+}
+
+.draftingCard{
+	background-image: url('../img/drafting/drafting-bg.png');
+	background-size: 100% 100%;
+}
+
+.rentalsCard{
+	background-image: url('../img/rentals/coffee-bg.png');
+	background-size: 100% 100%;
+}
+
+.fourkCard{
+	background-image: url('../img/rentals/retina-bg.png');
+	background-size: 100% 100%;
+}
+
+.cardShadow{
+	box-shadow: 2px 2px 1px #808080;
+}
+
+	/* ----- Solid colors ----- */
+.noBg{
+	background-color: rgba(0,0,0,0);
+}
+
+.whiteBg{
+	background-color: rgb(255,255,255);
+}
+
+.fourkBg{
+	background-color: rgb(244,244,244);
+}
+
+.fourkDarkGrayBg{
+	background-color: rgb(231,231,231);
+	margin-bottom: -25px;
+}
+
+.khakiBg{
+	background-color: rgb(247, 243, 235);
+}
+
+.draftingBlueBg{
+	background-color: rgb(119,166,221);
+}
+
+.lightGrayBg{
+	background-color: rgb(158,158,158);
+}
+
+.grayBg{
+	background-color: rgb(55,55,55);
+}
+
+.darkGrayBg{
+	background-color: rgb(38,38,38);
+}
+
+.darkBlueBg{
+	background-color: rgb(72,64,120);
+}
+
+.basicallyBlackBg{
+	background-color: rgb(5,5,5);
+}
