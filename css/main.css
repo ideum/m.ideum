@@ -4,6 +4,7 @@
 body{
 	text-align: center;
 	font-family: Lato;
+	max-width: 640px;
 }
 
 h2{
@@ -308,6 +309,87 @@ ul#cardInfo li{
 .integratedi7{width: 75%; margin: 0 14%;}
 .ruggedized{width: 45%;}
 
+/* ----- Home Page styles ----- */
+#homePageSectionTitle{
+	text-transform: uppercase;
+	padding: 25px 0 20px;
+	font-size: 1.5em;
+	text-align: left;
+	padding-left: 4em;
+}
+
+#homePageSectionTitle:before{
+	box-shadow: -7px 10px 0 1px #F00, -2px 20px 0 1px #F00,-12px 0px 0 1px #F00;
+	content: "";
+	-webkit-transform: rotate(-65deg);
+	-moz-transform: rotate(-65deg);
+	-o-transform: rotate(-65deg);
+	-ms-transform: rotate(-65deg);
+	width: 22px;
+	padding: 0;
+	position: absolute;
+	left: 9%;
+}
+
+.orbit-timer{
+	display: none;
+}
+
+.orbit-bullets, .orbit-bullets-container{
+	background-color: rgb(244,244,244);
+	margin-bottom: 10px !important;
+}
+
+.orbit-bullets li{
+	background: rgb(100,100,100);
+}
+
+.orbit-bullets li .active{
+	background: rgb(60,60,60) !important;
+}
+
+/*social bar */
+ul#specSheetBar li{
+	list-style-type: none;
+	list-style-image: none;
+	padding: 0 .7em;
+	display: inline;
+}
+
+#recentProjectsContainer{
+	width: 100%;
+	height: 230px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+ul#recentProjects{
+	width: 1750px;
+	padding: 0;
+	margin: 16px 0px;
+}
+
+ul#recentProjects li{
+	display: inline;
+	padding: 0 5px;
+}
+
+ul#recentProjects li img{
+	width: 330px;
+}
+
+#newsletterSignup{
+	text-align: left;
+	border-width: 2px 20px 2px 2px;
+	border-style: solid;
+	border-color: #808080;
+	font-size: 1.5em;
+}
+
+#submitButton{
+	margin: 10px 0 20px -34px;
+	width: 42px;
+}
 
 /* ----- Other id's ---- */
 #seperator{
@@ -315,7 +397,7 @@ ul#cardInfo li{
 	margin-top: -97px;
 }
 
-#specSheetBar ul{
+#specSheetBar ul, ul#specSheetBar{
 	display: inline-block;
 	list-style-image: none;
 }
