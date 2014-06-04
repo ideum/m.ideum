@@ -2,7 +2,7 @@
 <html>
     <head>
     <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/foundation/css/foundation.min.css">
+        <link rel="stylesheet" href="/foundation/css/foundation.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/fonts.css">
 
@@ -52,6 +52,9 @@
             </ul>
         </footer>
         <script>
+            // Hack to make topbar expandable on all screens
+            Foundation.media_queries['topbar'] = 'not all';
+
             $(document).foundation({
                 orbit: {
                     animation: 'slide',
