@@ -1,3 +1,7 @@
+---
+---
+@import "normalize";
+@import "foundation";
 /* main.css */
 
 /* ----- Base elements ----- */
@@ -132,7 +136,7 @@ option{
 }
 
 .top-bar .name, .top-bar.expanded .name{
-	margin: -5px -40px 5px; 
+	margin: -5px -40px 5px 0; 
 }
 
 .top-bar .toggle-topbar.menu-icon{
@@ -248,7 +252,7 @@ ul#cardInfo li{
 	text-decoration: none;
 	font-weight: 300;
 
-	background: background: rgb(225,225,225); /* Old browsers */
+	background: rgb(225,225,225); /* Old browsers */
 	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -moz-linear-gradient(top, rgb(225,225,225) 0%, rgb(255,255,255) 100%); /* FF3.6+ */
 	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(225,225,225)), color-stop(100%,rgb(255,255,255))); /* Chrome,Safari4+ */
 	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -webkit-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* Chrome10+,Safari5.1+ */
@@ -259,7 +263,7 @@ ul#cardInfo li{
 }
 
 #accordionSection dd.active a{
-	background: background: rgb(225,225,225); /* Old browsers */
+	background: rgb(225,225,225); /* Old browsers */
 	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -moz-linear-gradient(top, rgb(225,225,225) 0%, rgb(255,255,255) 100%); /* FF3.6+ */
 	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(225,225,225)), color-stop(100%,rgb(255,255,255))); /* Chrome,Safari4+ */
 	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -webkit-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* Chrome10+,Safari5.1+ */
