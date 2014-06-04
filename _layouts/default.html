@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/foundation/css/foundation.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/fonts.css">
+
+        <script src="/foundation/js/vendor/jquery.js"></script>
+        <script src="/foundation/js/vendor/modernizr.js"></script>
+        <script src="/foundation/js/foundation/foundation.js"></script>
+        <script src="/foundation/js/foundation/foundation.topbar.js"></script>
+        <script src="/foundation/js/foundation/foundation.accordion.js"></script>
+        <script src="/foundation/js/foundation/foundation.orbit.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <body>
+
+        <nav class="top-bar" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="#"><img src="/img/icons/logo-new.png" width="80px"></a></h1>
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul>
+              <li class=""><a title="Application Development" href="http://ideum.com/application-development">Application Development</a></li>
+              <li class=""><a title="Custom Exhibits" href="http://ideum.com/custom-exhibits">Custom Exhibits</a></li>
+              <li class=""><a title="Touch Tables" href="http://ideum.com/products/multitouch/">Touch Tables</a></li>
+              <li class=""><a title="Touch Walls" href="http://ideum.com/touch-walls/">Touch Walls</a></li>
+            </ul>
+
+          </section>
+        </nav>
+
+        {{ content }}
+
+        <footer>
+            <ul>
+                <li><a title="home" href="http://ideum.com/home/">Home</a></li>
+                <li><a title="Touch Tables" href="http://ideum.com/products/multitouch/">Touch Tables</a></li>
+                <li><a title="Multitouch Walls" href="http://ideum.com/touch-walls/">Touch Walls</a></li>
+                <li><a href="http://ideum.com/application-development/">Application Development</a></li>
+                <li class="indent"><a title="Web + App Design" href="http://ideum.com/media-web-design/">Web + App Design</a></li>
+                <li><a href="http://ideum.com/custom-exhibits/">Custom Exhibits</a></li>
+                <li class="indent"><a href="http://ideum.com/interactive-exhibits/">Interactive Exhibits</a></li>
+                <li><a title="Blog" href="http://ideum.com/blog/">Blog</a> / <a title="Job Opportunities" href="http://ideum.com/jobs/">Jobs</a> / <a title="About Us" href="http://ideum.com/about-us/">About Ideum</a></li>
+                <li><a title="Support" href="http://ideum.com/customer-support/">Support</a></li>
+            </ul>
+        </footer>
+        <script>
+            $(document).foundation({
+                orbit: {
+                    animation: 'slide',
+                    timer_show_progress_bar: false,
+                    timer_speed: 2500,
+                    animation_speed: 500,
+                    resume_on_mouseout: true,
+                    pause_on_hover: false,
+                    slide_number: false,
+                    navigation_arrows: false,
+                    bullets: true,
+                    swipe: true,
+                    circular: true
+                  }
+            });
+        </script>
+        <script src="/js/homepage.js"></script>
+    </body>
+</html>
