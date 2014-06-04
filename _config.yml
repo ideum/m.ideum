@@ -8,3 +8,8 @@ url: "http://m.ideum.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Pages not to build
+exclude:
+  - README.md
+  - TODO.md

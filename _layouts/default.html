@@ -20,21 +20,19 @@
         <nav class="top-bar" data-topbar>
           <ul class="title-area">
             <li class="name">
-              <h1><a href="#"><img src="/img/icons/logo-new.png" width="80px"></a></h1>
+              <h1><a href="/"><img src="/img/icons/logo-new.png" width="80px"></a></h1>
             </li>
-             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
             <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
           </ul>
 
           <section class="top-bar-section">
-            <!-- Right Nav Section -->
             <ul>
-              <li class=""><a title="Application Development" href="http://ideum.com/application-development">Application Development</a></li>
-              <li class=""><a title="Custom Exhibits" href="http://ideum.com/custom-exhibits">Custom Exhibits</a></li>
-              <li class=""><a title="Touch Tables" href="http://ideum.com/products/multitouch/">Touch Tables</a></li>
-              <li class=""><a title="Touch Walls" href="http://ideum.com/touch-walls/">Touch Walls</a></li>
+              {% for node in site.pages %}{% if node.url != '/' %}
+                <li{% if page.url == node.url %} class="active"{% endif %}>
+                  <a title="{{node.title}}" href="{{node.url}}">{{node.title}}</a>
+                </li>
+              {% endif %}{% endfor %}
             </ul>
-
           </section>
         </nav>
 
