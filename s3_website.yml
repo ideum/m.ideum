@@ -41,11 +41,11 @@ cloudfront_invalidate_root: true
 
 # concurrency_level: 5
 
- redirects:
-#   index.php: /
-#   about.php: about.html
-#   music-files/promo.mp4: http://www.youtube.com/watch?v=dQw4w9WgXcQ
-    products: products/multitouch
+redirects:
+  # index.php: /
+  # about.php: about.html
+  # music-files/promo.mp4: http://www.youtube.com/watch?v=dQw4w9WgXcQ
+  products/multitouch/index.html: products
 
 # routing_rules:
 #   - condition:
