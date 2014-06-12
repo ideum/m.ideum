@@ -28,9 +28,11 @@
           <section class="top-bar-section">
             <ul>
               {% for node in site.pages %}{% if node.url != '/' %}
-                <li{% if page.url == node.url %} class="active"{% endif %}>
-                  <a title="{{node.title}}" href="{{node.url}}">{{node.title}}</a>
-                </li>
+                {% unless node.url contains '.css' %}
+                  <li{% if page.url == node.url %} class="active"{% endif %}>
+                    <a title="{{node.title}}" href="{{node.url}}">{{node.title}}</a>
+                  </li>
+                {% endunless %}
               {% endif %}{% endfor %}
             </ul>
           </section>
