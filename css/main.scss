@@ -1,3 +1,6 @@
+---
+---
+
 /* main.css */
 
 /* ----- Base elements ----- */
@@ -101,7 +104,8 @@ option{
 
 #specSheetBar{
 	color: white;
-	margin: 0 0 0 -35px;
+	/*margin: 0 0 0 -35px;*/
+	margin: 0;
 	text-align: center;
 }
 
@@ -248,7 +252,7 @@ ul#cardInfo li{
 	text-decoration: none;
 	font-weight: 300;
 
-	background: background: rgb(225,225,225); /* Old browsers */
+	background: rgb(225,225,225); /* Old browsers */
 	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -moz-linear-gradient(top, rgb(225,225,225) 0%, rgb(255,255,255) 100%); /* FF3.6+ */
 	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(225,225,225)), color-stop(100%,rgb(255,255,255))); /* Chrome,Safari4+ */
 	background: url('../img/icons/icon_accordion_closed.png') no-repeat center right 4%, -webkit-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* Chrome10+,Safari5.1+ */
@@ -259,7 +263,7 @@ ul#cardInfo li{
 }
 
 #accordionSection dd.active a{
-	background: background: rgb(225,225,225); /* Old browsers */
+	background: rgb(225,225,225); /* Old browsers */
 	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -moz-linear-gradient(top, rgb(225,225,225) 0%, rgb(255,255,255) 100%); /* FF3.6+ */
 	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(225,225,225)), color-stop(100%,rgb(255,255,255))); /* Chrome,Safari4+ */
 	background: url('../img/icons/icon_accordion_open.png') no-repeat center right 4%, -webkit-linear-gradient(top, rgb(225,225,225) 0%,rgb(255,255,255) 100%); /* Chrome10+,Safari5.1+ */
@@ -287,7 +291,7 @@ ul#cardInfo li{
 #accordionSection dd .content{
 	text-align: left;
 	overflow: hidden;
-	padding: 0;	
+	padding: 0 0 10px 0;	
 }
 
 #accordionSection dd .content p, #accordionSection dd .content ul{
@@ -614,7 +618,20 @@ p.footerText{
 
 .coffeeSpecSheetBar{
 	background: url('../img/coffeetable/bg_spec_sheets.png') repeat-x;
+	ul {
+  	li {
+    	a {
+      	color:#fff;
+      	text-decoration:none;
+      	&:hover {
+        	border-bottom-style: solid;
+        	border-bottom-width: 1px;
+      	}
+    	}
+  	}
+	}
 }
+
 
 .bg46DraftingBg{
 	background-image: url('../img/drafting/drop-downs/bg_drop-downs.png');
@@ -695,4 +712,140 @@ p.footerText{
 
 .basicallyBlackBg{
 	background-color: rgb(5,5,5);
+}
+
+
+/* ##### ResponsiveProductGrid Mods ##### */
+/* ----- Gradient Backgrounds ----- */
+.purpleRadialGradient {
+background: #1c1a2a; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYzFhMmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyNCUiIHN0b3AtY29sb3I9IiMxYjE5MjgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MyUiIHN0b3AtY29sb3I9IiMxMTEwMWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTExMDFhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(center, ellipse cover, #1c1a2a 0%, #1b1928 24%, #11101a 53%, #11101a 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1c1a2a), color-stop(24%,#1b1928), color-stop(53%,#11101a), color-stop(100%,#11101a)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, #1c1a2a 0%,#1b1928 24%,#11101a 53%,#11101a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, #1c1a2a 0%,#1b1928 24%,#11101a 53%,#11101a 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, #1c1a2a 0%,#1b1928 24%,#11101a 53%,#11101a 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, #1c1a2a 0%,#1b1928 24%,#11101a 53%,#11101a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1a2a', endColorstr='#11101a',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+.greyRadialGradient {
+background: #979797; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5Nzk3OTciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI3JSIgc3RvcC1jb2xvcj0iIzk3OTc5NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEyJSIgc3RvcC1jb2xvcj0iIzk3OTc5NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ZDVkNWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-radial-gradient(center, ellipse cover,  #979797 0%, #979797 7%, #979797 12%, #5d5d5d 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#979797), color-stop(7%,#979797), color-stop(12%,#979797), color-stop(100%,#5d5d5d)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #979797 0%,#979797 7%,#979797 12%,#5d5d5d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #979797 0%,#979797 7%,#979797 12%,#5d5d5d 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #979797 0%,#979797 7%,#979797 12%,#5d5d5d 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #979797 0%,#979797 7%,#979797 12%,#5d5d5d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#979797', endColorstr='#5d5d5d',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+.brownRadialGradient {
+background: #4c371f; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM0YzM3MWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMzEyNTE4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(center, ellipse cover,  #4c371f 0%, #312518 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4c371f), color-stop(100%,#312518)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #4c371f 0%,#312518 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #4c371f 0%,#312518 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #4c371f 0%,#312518 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #4c371f 0%,#312518 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c371f', endColorstr='#312518',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+.aquamarineVerticalGradient {background: #10bc83; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEwYmM4MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iIzBkYTU4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg5JSIgc3RvcC1jb2xvcj0iIzA0NmU3NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjViNzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #10bc83 0%, #0da580 48%, #046e77 89%, #025b75 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#10bc83), color-stop(48%,#0da580), color-stop(89%,#046e77), color-stop(100%,#025b75)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #10bc83 0%,#0da580 48%,#046e77 89%,#025b75 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #10bc83 0%,#0da580 48%,#046e77 89%,#025b75 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #10bc83 0%,#0da580 48%,#046e77 89%,#025b75 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #10bc83 0%,#0da580 48%,#046e77 89%,#025b75 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10bc83', endColorstr='#025b75',GradientType=0 ); /* IE6-8 */
+}
+.responsiveProductGrid {text-align:left;}
+.responsiveProductGrid #productGrid {padding:0;}
+.responsiveProductGrid #productGrid h2 {background: transparent url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/grey-header-bar-980x50.png') right top repeat; box-sizing:border-box; clear:both; color:#fff; font-size:36px; font-family:"Lato-Light", sans-serif; font-weight:300; min-height:50px; line-height:36px; margin:2px 0; text-transform:uppercase;}
+
+.responsiveProductGrid #productGrid h2.half {background: transparent url('http://ideum.com/images/product-grid-responsive/grey-header-bar-980x50.png') center no-repeat; width:100%;}
+.responsiveProductGrid #productGrid h2.left {clear:none; float:left;}
+.responsiveProductGrid #productGrid h2.right {clear:none; float:right;}
+
+.responsiveProductGrid #productGrid .productCell {box-sizing:border-box; margin-bottom:2px; padding:20px 40px; text-align:center; width:100%;}
+.responsiveProductGrid #productGrid .productCell img.productImage {position:relative; right:-0px; width:100%;}
+
+.responsiveProductGrid #productGrid #resp_platform_46_coffee_table {background: transparent url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/brown-grid-580x800.jpg') left top no-repeat; background-size:120%; float:left;}
+.responsiveProductGrid #productGrid #resp_platform_46_coffee_table img.productImage {}
+
+.responsiveProductGrid #productGrid #resp_platform_32_coffee_table {background: transparent url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/brown-grid-580x800.jpg') left top no-repeat; background-size:120%; float:right;}
+.responsiveProductGrid #productGrid #resp_platform_32_coffee_table img.productImage {}
+
+.responsiveProductGrid #productGrid #resp_platform {float:left;}
+.responsiveProductGrid #productGrid #resp_platform img.productImage {}
+
+.responsiveProductGrid #productGrid #resp_platform_46 {float:right;}
+.responsiveProductGrid #productGrid #resp_platform_46 img.productImage {}
+
+.responsiveProductGrid #productGrid #resp_platform_drafting_46 {background:#72b9fb url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/grid-bg.png') repeat 0 0; float:left;}
+.responsiveProductGrid #productGrid #resp_platform_drafting_46 img.productImage {right:-0px;}
+
+.responsiveProductGrid #productGrid #resp_platform_drafting_55 {background:#72b9fb url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/grid-bg.png') repeat 0 0; float:right;}
+.responsiveProductGrid #productGrid #resp_platform_drafting_55 img.productImage {right:-0px;}
+
+.responsiveProductGrid #productGrid #resp_pro {float:left;}
+.responsiveProductGrid #productGrid #resp_pro img.productImage {right:-0px;}
+
+.responsiveProductGrid #productGrid #resp_pro_lab {float:right;}
+.responsiveProductGrid #productGrid #resp_pro_lab img.productImage {right:-0px;}
+
+.responsiveProductGrid #productGrid #resp_pano {float:left;}
+.responsiveProductGrid #productGrid #resp_pano img.productImage {right:-0px; width:59%;}
+
+.responsiveProductGrid #productGrid #resp_sales {background:transparent url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/direct-sales-580x400.jpg') repeat 0 0; background-size:cover; float:right; margin-bottom:2px; padding-top:30px;}
+.responsiveProductGrid #productGrid #resp_rentals {background:transparent url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/rentals-580x316.jpg') repeat 0 0; background-size:cover; float:right; padding-top:50px;}
+
+.responsiveProductGrid #productGrid h3, .responsiveProductGrid #productGrid h3 a {color:#fff; font-size:50px; font-weight:400; line-height:64px; text-align:left; text-decoration:none; width:70%;}
+.responsiveProductGrid #productGrid h3 a:hover {color:#fff; text-decoration:underline;}
+.responsiveProductGrid #productGrid p {color:#fff; font-size:26px; font-family:"OpenSansRegular", sans-serif; line-height:40px; padding:0; text-align:left;}
+
+.responsiveProductGrid #productGrid p.gridButton {margin-top:30px;}
+.responsiveProductGrid #productGrid p.gridButton a {background-color:#3e4260; color:#fff; display:table-cell; font-size:18px; height:40px; padding:0 20px; text-decoration:none; text-transform:uppercase; vertical-align:middle;}
+.responsiveProductGrid #productGrid p.gridButton a:hover {text-decoration:underline;}
+
+.mobileOnly {display:none;}
+.desktopOnly {display:block;}
+
+@media (max-width: 1024px) {
+  .mobileOnly {display:block;}
+  .desktopOnly {display:none;}
+  body {overflow-x:hidden;}
+  #page, #pageExteriorWrapper {min-width:100%; width:100%;}
+  #contentWrap {width:100%;}
+  #breadCrumbWrap {width:98%;}
+  .responsiveProductGrid #productGrid {margin-left:auto; margin-right:auto; padding:0; max-width:100%;}
+  .responsiveProductGrid #productGrid h2 {max-width:100%; padding:.5em 1em 0 0;}
+  .responsiveProductGrid #productGrid h2.left, .responsiveProductGrid #productGrid h2.right {background: transparent url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/grey-header-bar-980x50.png') top left no-repeat; 
+  width:100%; }
+  
+  .responsiveProductGrid #productGrid .productCell {clear:both; float:left !important; margin-bottom:2px; padding:20px 40px; width:100% !important;}
+  .responsiveProductGrid #productGrid h3, .responsiveProductGrid #productGrid h3 a {font-size:50px; font-weight:400; line-height:64px; max-width:70%;}
+  .responsiveProductGrid #productGrid p {font-size:26px; line-height:40px; padding:0px;}
+  .responsiveProductGrid #productGrid #resp_platform_46_coffee_table, .responsiveProductGrid #productGrid #resp_platform_32_coffee_table {background-size:120%;}
+  .responsiveProductGrid #productGrid #resp_pano, .responsiveProductGrid #productGrid #resp_sales, .responsiveProductGrid #productGrid #resp_rentals {height:100%;}
+  .responsiveProductGrid #productGrid .productCell img.productImage {right:-0%;}
+  
+  #footer {max-width:100%; min-width:220px !important;}
+  #footerInteriorWrap {height:100%; max-width: 100%; padding:22px 30px; width:calc(100% - 60px);}
+  #footerInteriorWrap #supplementary.two #first {width:25%;}
+  #footerInteriorWrap #supplementary.two #second {width:70%;}
+}
+
+@media (max-width: 675px) {
+  .responsiveProductGrid #productGrid h2 {max-width:100%; padding:.5em 1em 0 20px;}
+  .responsiveProductGrid #productGrid .productCell {padding:20px;}
+  .responsiveProductGrid #productGrid #resp_platform_46_coffee_table, .responsiveProductGrid #productGrid #resp_platform_32_coffee_table {background-size:120%;}
+  .responsiveProductGrid #productGrid h3, .responsiveProductGrid #productGrid h3 a {font-size:26px; font-weight:300; line-height:40px; max-width:100%;}
+  .responsiveProductGrid #productGrid p {font-size:16px; line-height:24px; padding:0px;}
+  .responsiveProductGrid #productGrid p.gridButton a {height:auto; padding:8px 20px;}
 }
