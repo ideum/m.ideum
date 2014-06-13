@@ -857,3 +857,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10bc83', end
   .responsiveProductGrid #productGrid p {font-size:16px; line-height:24px; padding:0px;}
   .responsiveProductGrid #productGrid p.gridButton a {height:auto; padding:8px 20px;}
 }
+
+@media (max-width:320px) {
+  
+  .responsiveProductGrid #productGrid #resp_platform_46_coffee_table, .responsiveProductGrid #productGrid #resp_platform_32_coffee_table {background:#4c371f url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/brown-grid-580x800.jpg') left bottom no-repeat;}
+  
+}
