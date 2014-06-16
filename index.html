@@ -17,45 +17,32 @@ title: Ideum
 
 <div id="recentProjectsContainer" class="fourkBg">
     <ul id="recentProjects">
-        <li><a
-          href="http://ideum.com/interactive-exhibits/arcelormittal-orbit-gigapixel-viewers/"><img
-        src="/img/home/carousel/carousel-amo.png"></a></li>
-        <li><a
-          href="http://ideum.com/interactive-exhibits/multiusermultitouch-node-exhibit/"><img
-        src="/img/home/carousel/carousel-dahlia.png"></a></li>
-        <li><a
-          href="http://ideum.com/interactive-exhibits/visit-indy-3d-interactive-display/"><img
-        src="/img/home/carousel/carousel-indy.png"></a></li>
-        <li><a
-          href="http://ideum.com/interactive-exhibits/usda-nrcs/"><img
-        src="/img/home/carousel/carousel-usda.png"></a></li>
-        <li><a
-          href="http://ideum.com/interactive-exhibits/gardens-groves-george-washington-mount-vernon/"><img
-        src="/img/home/carousel/carousel-gardengroves.png"></a></li>
+        {% for slide in site.data.projects %}
+          <li>
+              <a href="{{ slide.permalink }}">
+                  <img src="{{ slide.image }}">
+              </a>
+          </li>
+        {% endfor %}
     </ul>
 </div>
+
 <!-- Yes this is static, among the many things to do to if Ideum.com ever leaves Wordpress. -->
 <div id="homePageSectionTitle" class="fourkBg">
     Latest News
 </div>
 
-<div class="fourkBg" id="outerCardSectionComplete">
-    <div class="whiteBg cardShadow" id="cardSectionComplete">
-        <h2 class="leftText">Sweet Deal: Android KitKat on an Ideum Multitouch Coffee Table</h2>
-        <p>
-            KitKat just got even sweeter. The latest Android operating system is now available on our Platform 46 abd Platforn 32 coffee tables. <a href="http://ideum.com/blog/2014/04/kitkat-android-ideum-multitouch-table/">Read more</a>
-        </p>
+{% for item in site.data.news %}
+    <div class="fourkBg" id="outerCardSectionComplete">
+        <div class="whiteBg cardShadow" id="cardSectionComplete">
+            <h2 class="leftText">{{ item.title }}</h2>
+            <p>
+                {{ item.excrept }}
+                <a href="{{ item.permalink }}">Read more</a>
+            </p>
+        </div>
     </div>
-</div>
-
-<div class="fourkBg" id="outerCardSectionComplete">
-    <div class="whiteBg cardShadow" id="cardSectionComplete">
-        <h2 class="leftText">Ideum Adds 4K UHD Platform 55 Drawing Multitouch Table To Rental Options</h2>
-        <p>
-            We are happy to announce that we are now offering our first 4K UHD rental table: the Platform 55 Drafting Multitouch Table. <a href="http://ideum.com/blog/2014/04/ideum-rents-4k-multitouch-drafting-table/">Read more</a>
-        </p>
-    </div>
-</div>
+{% endfor %}
 
 <div id="homePageSectionTitle" class="fourkBg">
     Software Initiatives
