@@ -17,29 +17,27 @@ title: Ideum
 
 <div id="recentProjectsContainer" class="fourkBg">
     <ul id="recentProjects">
-        {% for slide in site.data.projects %}
-          <li>
-              <a href="{{ slide.permalink }}">
-                  <img src="{{ slide.image }}">
-              </a>
-          </li>
+        {% for slide in site.data.projects limit:5 %}
+            <li>
+                <a href="{{ slide.link }}">
+                    <img src="{{ slide.image }}">
+                </a>
+            </li>
         {% endfor %}
     </ul>
 </div>
 
-<!-- Yes this is static, among the many things to do to if Ideum.com ever leaves Wordpress. -->
 <div id="homePageSectionTitle" class="fourkBg">
     Latest News
 </div>
 
-{% for item in site.data.news %}
-    <div class="fourkBg" id="outerCardSectionComplete">
+{% for item in site.data.news limit:2 %}
+    <div class="fourkBg newsItem" id="outerCardSectionComplete">
         <div class="whiteBg cardShadow" id="cardSectionComplete">
-            <h2 class="leftText">{{ item.title }}</h2>
-            <p>
-                {{ item.excrept }}
-                <a href="{{ item.permalink }}">Read more</a>
-            </p>
+            <h2 class="leftText">
+                <a href="{{ item.link}}">{{ item.title }}</a>
+            </h2>
+            <p>{{ item.excerpt }}</p>
         </div>
     </div>
 {% endfor %}

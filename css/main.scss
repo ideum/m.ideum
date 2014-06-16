@@ -230,6 +230,16 @@ ul#cardInfo li{
 	padding: 1em 1.5em;
 }
 
+/* ----- Homepage news item -----*/
+
+.newsItem h2 a {
+  color: #372300;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 /* ----- Full section styling ----- */
 
 #fullSection ul{
