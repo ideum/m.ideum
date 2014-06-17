@@ -1,9 +1,15 @@
 # Site settings
 title: Ideum
 email: info@ideum.com
-description: "Ideum provides a full range of exhibit design, Web design, and interactive design services to museums, nonprofit organizations, and socially responsible companies. We create dynamic interactive experiences for museum and Web visitors."
+description: |
+  Ideum provides a full range of exhibit design, Web design, and interactive
+  design services to museums, nonprofit organizations, and socially responsible
+  companies. We create dynamic interactive experiences for museum and Web
+  visitors.
 baseurl: ""
 url: "http://m.ideum.com"
+opengraph:
+  default_image: http://ideum.com/wp-content/themes/ideum2012/images/platform-46-meta-646x490.png
 
 # Build settings
 markdown: kramdown
