@@ -27,13 +27,13 @@
 
           <section class="top-bar-section">
             <ul>
-              {% for node in site.pages %}{% if node.url != '/' %}
-                {% unless node.url contains '.css' %}
+              {% for node in site.pages %}
+                {% unless node.url == '/' or node.url == '/error.html' or node.url contains '.css' %}
                   <li{% if page.url == node.url %} class="active"{% endif %}>
                     <a title="{{node.title}}" href="{{node.url}}">{{node.title}}</a>
                   </li>
                 {% endunless %}
-              {% endif %}{% endfor %}
+              {% endfor %}
             </ul>
           </section>
         </nav>
