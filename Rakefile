@@ -1,3 +1,9 @@
+desc 'Serve the site locally for development'
+task :serve do
+  system 'jekyll serve --watch'
+end
+task :default => :serve
+
 task :build => 'fetch:all' do
   system 'jekyll build'
 end
