@@ -5,6 +5,7 @@ end
 task :default => :serve
 
 task :build => 'fetch:all' do
+  rm_rf '_site'
   system 'jekyll build'
 end
 
@@ -25,6 +26,8 @@ namespace :fetch do
 
   desc 'Fetch the latest news from ideum.com'
   task :news => :setup do
+    puts 'Fetching updated blog entries...'
+
     open('http://ideum.com/feed/') do |raw_feed|
       feed = RSS::Parser.parse(raw_feed)
 
@@ -45,6 +48,8 @@ namespace :fetch do
 
   desc 'Fetch recent projects from ideum.com'
   task :projects => :setup do
+    puts 'Fetching updated project summaries...'
+
     open('http://ideum.com/wp-admin/admin-ajax.php?action=recent_projects') do |raw_json|
       data = JSON.load(raw_json)
 
