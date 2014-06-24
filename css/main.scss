@@ -452,6 +452,12 @@ ul#recentProjects li img{
 	margin: -20px 0;
 }
 
+footer {
+  background-color: #f6f6f6;
+  font-size: 1.4em;
+  margin-top: 70px;
+}
+
 footer ul{
 	list-style-type: none;
 	text-align: left;
@@ -779,6 +785,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10bc83', end
 .responsiveProductGrid {text-align:left;}
 .responsiveProductGrid #productGrid {padding:0;}
 .responsiveProductGrid #productGrid h2 {background: transparent url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/grey-header-bar-980x50.png') right top repeat; box-sizing:border-box; clear:both; color:#fff; font-size:36px; font-family:"Lato-Light", sans-serif; font-weight:300; min-height:50px; line-height:36px; margin:2px 0;  padding:.5em 1em 0 40px; text-transform:uppercase;}
+.responsiveProductGrid #productGrid h2 span {display:inline-block; position:relative; bottom:-4px;}
 
 .responsiveProductGrid #productGrid h2.half {background: transparent url('http://ideum.com/images/product-grid-responsive/grey-header-bar-980x50.png') center no-repeat; width:100%;}
 .responsiveProductGrid #productGrid h2.left {clear:none; float:left;}
@@ -807,6 +814,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10bc83', end
 
 .responsiveProductGrid #productGrid #resp_pro {float:left;}
 .responsiveProductGrid #productGrid #resp_pro img.productImage {right:-0px;}
+
+.responsiveProductGrid #productGrid #resp_presenter {float:left;}
+.responsiveProductGrid #productGrid #resp_presenter img.productImage {right:-0px;}
 
 .responsiveProductGrid #productGrid #resp_pro_lab {float:right;}
 .responsiveProductGrid #productGrid #resp_pro_lab img.productImage {right:-0px;}
