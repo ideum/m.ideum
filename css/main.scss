@@ -888,10 +888,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10bc83', end
   .responsiveProductGrid #productGrid #resp_platform_46_coffee_table, .responsiveProductGrid #productGrid #resp_platform_32_coffee_table {background:#4c371f url('http://ideum.com/wp-content/themes/ideum2012/images/product-grid-responsive/brown-grid-580x800.jpg') left bottom no-repeat;}  
 }
 
-#share-buttons img {
-width: 35px;
-padding: 5px;
-border: 0;
-box-shadow: 0;
-display: inline;
-}
+#share-buttons img {border:0; box-shadow:0; display:inline; padding:5px; width:35px;}
+#share-buttons img:hover {opacity:0.8;}
