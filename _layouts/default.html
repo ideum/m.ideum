@@ -54,6 +54,23 @@
               Ideum develops innovative hardware and software and is keenly focused on the future of Human Computer Interaction (HCI). Our multitouch tables and walls are known for their original designs and exceptional build-quality. Our creative and collaborative approach to custom exhibit design produces memorable visitor experiences.
             </p>
             
+            <div id="share-buttons">
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u={% if page.opengraph.url %}{{ page.opengraph.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" target="_blank"><img 
+                src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+                <!-- Twitter -->
+                <a href="http://twitter.com/share?url={% if page.opengraph.url %}{{ page.opengraph.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}&text=Ideum - Exhibit Design + Multitouch Software and Hardware" target="_blank"><img 
+                src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+                <!-- Google+ -->
+                <a href="https://plus.google.com/share?url={% if page.opengraph.url %}{{ page.opengraph.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" target="_blank"><img 
+                src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>               
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url={% if page.opengraph.url %}{{ page.opengraph.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" target="_blank"><img 
+                src="http://www.simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+                <!-- Pinterest -->
+                <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="http://www.simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" /></a>               
+            </div>
+            
             <ul>
                 <li><a title="home" href="/">Home</a></li>
                 <li><a title="Touch Tables" href="/products/">Touch Tables</a></li>
