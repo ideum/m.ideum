@@ -396,6 +396,8 @@ ul#recentProjects li img{
 }
 
 #newsletterSignup{
+  display: inline-block;
+  width: auto;
 	text-align: left;
 	border-width: 2px 20px 2px 2px;
 	border-style: solid;
@@ -444,6 +446,11 @@ ul#recentProjects li img{
 .superSelect{
 	background-color: black;
 	padding: .2em 0;
+}
+
+.superSelect select {
+  border: none;
+  height: auto;
 }
 
 .rentals-top-bar, .rentals-top-bar ul{
