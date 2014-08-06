@@ -1,0 +1,98 @@
+---
+layout: default
+title: Contact Us
+---
+
+<h1>Contact Us</h1>
+
+<form id="contact-us" action="http://api.ideum.com/leads" method="POST">
+
+  <div class="row">
+    <div class="large-12 columns">
+      <label class="required">
+        First Name
+        <input type="text" name="first-name" autofocus required>
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <label class="required">
+        Last Name
+        <input type="text" name="last-name" required>
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <label class="required">
+        Email
+        <input type="email" name="email" required>
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <label>
+        Company Name
+        <input type="text" name="company">
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Contact Me By Phone</label>
+
+      <input type="radio" id="contact-by-phone-yes" name="contact-by-phone" value="yes" checked><label for="contact-by-phone-yes">Yes</label>
+      <input type="radio" id="contact-by-phone-no" name="contact-by-phone" value="no"><label for="contact-by-phone-no">No</label>
+
+      <input type="tel" name="phone">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Product or Service You Are Interested In</label>
+
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="checkbox" id="check-app-web-dev" name="service[app-web-dev]" value="App / Web Development">
+          <label for="check-app-web-dev">App / Web Development</label>
+        </div>
+        <div class="large-12 columns">
+          <input type="checkbox" id="check-touch-tables" name="service[touch-tables]" value="Touch Tables">
+          <label for="check-touch-tables">Touch Tables</label>
+        </div>
+        <div class="large-12 columns">
+          <input type="checkbox" id="check-touch-walls" name="service[touch-walls]" value="Touch Walls">
+          <label for="check-touch-walls">Touch Walls</label>
+        </div>
+        <div class="large-12 columns">
+          <input type="checkbox" id="check-cust-exhibit-dev" name="service[cust-exhibit-dev]" value="Custom Exhibit Development">
+          <label for="check-cust-exhibit-dev">Custom Exhibit Development</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <label>
+        Please include your questions and interest in working with us, and we will be in touch with you soon.
+        <textarea name="comments" rows="5"></textarea>
+      </label>
+    </div>
+  </div>
+
+  <p class="requiredNote">* - Required</p>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <input type="submit" class="button expand" value="Submit">
+    </div>
+  </div>
+</form>
