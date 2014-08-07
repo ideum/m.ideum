@@ -434,6 +434,8 @@ ul#recentProjects li img{
 	padding: 4px 27px;
 	background: url('../img/icons/icon_pdf.png') no-repeat center left;
 }
+#specSheetBar ul li a {color:#fff; text-decoration:none;}
+#specSheetBar ul li a:hover {border-bottom:1px solid #fff;}
 
 .draftingNumber2{
 	top: -20px;
