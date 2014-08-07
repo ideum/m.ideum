@@ -3,14 +3,14 @@ layout: default
 title: Contact Us
 ---
 
-<h1>Contact Us</h1>
+<h1 id="pageTitle">Inquiry Form</h1>
 
-<form id="contact-us" action="http://api.ideum.com/leads" method="POST">
+<form id="contact-us" action="http://api.ideum.com/leads" method="POST" autocomplete="on" novalidate>
 
   <div class="row">
     <div class="large-12 columns">
-      <label class="required">
-        First Name
+      <label class="required trueLabel">
+        <span class="indentText">First Name</span> <span class="requiredNote">*</span>
         <input type="text" name="first-name" autofocus required>
       </label>
     </div>
@@ -18,8 +18,8 @@ title: Contact Us
 
   <div class="row">
     <div class="large-12 columns">
-      <label class="required">
-        Last Name
+      <label class="required trueLabel">
+        <span class="indentText">Last Name</span> <span class="requiredNote">*</span>
         <input type="text" name="last-name" required>
       </label>
     </div>
@@ -27,8 +27,8 @@ title: Contact Us
 
   <div class="row">
     <div class="large-12 columns">
-      <label class="required">
-        Email
+      <label class="required trueLabel">
+        <span class="indentText">Email</span> <span class="requiredNote">*</span>
         <input type="email" name="email" required>
       </label>
     </div>
@@ -36,8 +36,8 @@ title: Contact Us
 
   <div class="row">
     <div class="large-12 columns">
-      <label>
-        Company Name
+      <label class="trueLabel">
+        <span class="indentText">Company Name</span>
         <input type="text" name="company">
       </label>
     </div>
@@ -45,18 +45,24 @@ title: Contact Us
 
   <div class="row">
     <div class="large-12 columns">
-      <label>Contact Me By Phone</label>
-
-      <input type="radio" id="contact-by-phone-yes" name="contact-by-phone" value="yes" checked><label for="contact-by-phone-yes">Yes</label>
-      <input type="radio" id="contact-by-phone-no" name="contact-by-phone" value="no"><label for="contact-by-phone-no">No</label>
-
-      <input type="tel" name="phone">
+      <!--
+        <label>Contact Me By Phone</label>
+        <input type="radio" id="contact-by-phone-yes" name="contact-by-phone" value="yes" checked><label for="contact-by-phone-yes">Yes</label>
+        <input type="radio" id="contact-by-phone-no" name="contact-by-phone" value="no"><label for="contact-by-phone-no">No</label>
+        <input type="tel" name="phone">
+      -->
+      <span class="fauxLabel trueLabel indentText">Contact me by phone</span><br>
+      <input type="radio" id="contact-by-phone-yes" name="contact-by-phone" value="yes" checked>
+      <label class="radioLabel" for="contact-by-phone-yes">Yes</label>
+      <input class="partial-input" id="phone-number" type="tel" name="phone"><br>
+      <input type="radio" id="contact-by-phone-no" name="contact-by-phone" value="no">
+      <label class="radioLabel" for="contact-by-phone-no">No</label>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row productBlock">
     <div class="large-12 columns">
-      <label>Product or Service You Are Interested In</label>
+      <label class="trueLabel tightWrap"><span class="indentText">Product or Service You Are <br>Interested In</span></label>
 
       <div class="row">
         <div class="large-12 columns">
@@ -79,11 +85,11 @@ title: Contact Us
     </div>
   </div>
 
-  <div class="row">
+  <div class="row inquiryBlock">
     <div class="large-12 columns">
       <label>
-        Please include your questions and interest in working with us, and we will be in touch with you soon.
-        <textarea name="comments" rows="5"></textarea>
+        <span class="indentText">Please include your questions and interest in working with us, and we will be in touch with you soon.</span>
+        <textarea name="comments" rows="8"></textarea>
       </label>
     </div>
   </div>
