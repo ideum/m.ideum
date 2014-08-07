@@ -563,6 +563,158 @@ p.footerText{
 
 /* ----- Bacgkround classes ----- */
 
+
+
+
+/* ----- Inquiry form elements ----- */
+h1#pageTitle {
+  color:#372300;
+  font-weight:300;
+  font-size:48px;
+  font-style:normal;
+  line-height:1.25em;
+  margin:0 0 0 10px;
+  padding:.5em 0 0;
+  text-align:left;
+}
+
+#contact-us {
+  padding:80px 0 0 0px;
+  background:transparent url('http://ideum.com/wp-content/themes/ideum2012/images/breadcrumb-bg-1024x40.png') no-repeat 50% top;
+  background-size:100%;
+  .productBlock {
+    margin-top:44px;
+    label {
+      font-family:'Lato', sans-serif; 
+      font-size:36px; 
+      line-height:46px;
+      margin-bottom:24px;
+    }
+  }
+  .inquiryBlock {
+    margin-top:40px;
+    label {
+      font-family:'Lato-bold', sans-serif; 
+      font-size:36px; 
+      line-height:46px;
+      margin-bottom:24px;
+      .indentText {
+        padding:0 90px 24px 0;
+      }
+    }
+  }
+  label {
+    &.trueLabel {
+      color:#666; 
+      font-family:'Lato-Bold', sans-serif; 
+      font-size:36px; 
+      line-height:46px;
+    }
+    &.radioLabel {
+      color:#666; 
+      font-family:'Lato', sans-serif; 
+      font-size:36px; 
+      line-height:46px;
+    }
+    &.tightWrap {  
+      line-height:36px;
+    }
+  }/* end of label */
+  span {
+    &.indentText {
+      display:inline-block;
+      margin-left:20px;
+    }
+    &.trueLabel {
+      color:#666; 
+      font-family:'Lato-Bold', sans-serif; 
+      font-size:36px; 
+      line-height:46px;
+    }
+    .fauxLabel {
+      display:block;
+      margin-bottom:14px;
+    }
+  }/* end of span */
+  .requiredNote {
+    color:#ec0229;
+    font-family:'Lato-Bold', sans-serif;
+    font-size:36px;
+    line-height:46px;
+  }/* end of requiredNote */
+  p.requiredNote {
+    line-height:36px;
+    margin-top: 0;
+    padding:0px 1.5em .5em 1em;
+  }
+  input {
+    font-family: 'Lato', sans-serif;
+    font-size:36px;
+    font-weight:300;
+    .full-input {
+      box-sizing:border-box;
+      padding:2px 10px;
+    }
+  }
+  input[type="radio"], input[type="checkbox"] {
+    position:relative;
+    top:-6px;
+  }
+  input[type="checkbox"]  + label {
+    max-width:80%;
+    vertical-align: middle;
+  }
+  input[type="text"] {
+    background-color:#dcdcdc;
+    border:none;
+    border-radius:10px;
+    height:75px;
+    margin:14px 0 44px;
+  } /* end input[type="text"] */
+  input[type="email"] {
+    background-color:#dcdcdc;
+    border:none;
+    border-radius:10px;
+    height:75px;
+    margin:14px 0 44px;
+  } /* end input[type="email"] */
+  input[type="tel"] {
+    background-color:#dcdcdc;
+    border:none;
+    border-radius:10px;
+    height:75px;
+    margin:14px 0 44px;
+    &.partial-input {
+      clear:none;
+      display:inline-block;
+      width:50%;
+    }
+  } /* end input[type="tel"] */
+  textarea {
+    background-color:#dcdcdc;
+    border:none;
+    border-radius:10px;
+    font-family:'Lato', sans-serif;
+    font-size:36px;
+    font-weight:300;
+    margin:14px 0 44px;
+    padding:10px 12px 20px 20px;
+  } /* end textarea */
+  input[type="submit"] {
+    background-color:#4a4c7e;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    font-weight:bold;
+    padding:8px 33px;
+  }
+
+} /* end of #contact-us */
+
+
+
+
+
 	/* ----- Icon Backgrounds ----- */
 .bluetooth{background: url("../img/icons/logo_bluetooth.png") center left no-repeat; padding-left:31px;}
 .wifi{background: url("../img/icons/logo_wifi.png") center left no-repeat; padding-left:55px;}
