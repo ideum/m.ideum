@@ -2,16 +2,11 @@
 <html>
     <head>
     <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/foundation/css/foundation.css">
+        <link rel="stylesheet" href="/css/foundation.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/fonts.css">
 
-        <script src="/foundation/js/vendor/jquery.js"></script>
         <script src="/foundation/js/vendor/modernizr.js"></script>
-        <script src="/foundation/js/foundation/foundation.js"></script>
-        <script src="/foundation/js/foundation/foundation.topbar.js"></script>
-        <script src="/foundation/js/foundation/foundation.accordion.js"></script>
-        <script src="/foundation/js/foundation/foundation.orbit.js"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -84,29 +79,16 @@
                   <a title="Job Opportunities" href="http://ideum.com/jobs/">Jobs</a> / 
                   <a title="About Us" href="http://ideum.com/about-us/">About Ideum</a>
                 </li>
-                <li><a title="Support" href="http://ideum.com/customer-support/">Support</a> / <a href="http://ideum.com/legal/">Legal</a></li>
+                <li><a title="Support" href="http://ideum.com/customer-support/">Support</a> / <a href="http://ideum.com/legal/">Legal</a> / <a href="/contact-us/">Inquiry Form</a></li>
             </ul>
         </footer>
-        <script>
-            // Hack to make topbar expandable on all screens
-            Foundation.media_queries['topbar'] = 'not all';
 
-            $(document).foundation({
-                orbit: {
-                    animation: 'slide',
-                    timer_show_progress_bar: false,
-                    timer_speed: 15000, // slow it way the heck down
-                    animation_speed: 5500,
-                    resume_on_mouseout: true,
-                    pause_on_hover: false,
-                    slide_number: false,
-                    navigation_arrows: false,
-                    bullets: true,
-                    swipe: true,
-                    circular: true
-                  }
-            });
-        </script>
-        <script src="/js/homepage.js"></script>
+        <script src="/foundation/js/vendor/jquery.js"></script>
+        <script src="/foundation/js/foundation/foundation.js"></script>
+        <script src="/foundation/js/foundation/foundation.topbar.js"></script>
+        <script src="/foundation/js/foundation/foundation.accordion.js"></script>
+        <script src="/foundation/js/foundation/foundation.orbit.js"></script>
+
+        <script src="/js/main.js"></script>
     </body>
 </html>
