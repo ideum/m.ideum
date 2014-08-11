@@ -687,7 +687,9 @@ h1#pageTitle {
     &.partial-input {
       clear:none;
       display:inline-block;
-      width:512px;
+      margin-right:-4px;
+      max-width:calc(100% - 103px);
+      width:508px;
     }
   } /* end input[type="tel"] */
   textarea {
