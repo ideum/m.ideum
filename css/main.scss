@@ -116,6 +116,10 @@ option{
 
 a.whiteText {color:#fff;}
 
+a:hover {text-decoration:none; opacity:.8;}
+#contact-us input.button:hover {opacity:.8;}
+p.gridButton a:hover {opacity:1;}
+
 /* ----- top bar styles ----- */
 .top-bar, .top-bar.expanded, .top-bar.expanded .title-area, .rentals-top-bar{
 	background: rgb(243,243,243); /* Old browsers */
@@ -395,6 +399,8 @@ ul#recentProjects li img{
 	width: 330px;
 }
 
+#subForm {margin-left:34px;}
+
 #newsletterSignup{
   display: inline-block;
   width: auto;
@@ -409,7 +415,12 @@ ul#recentProjects li img{
 	margin: 10px 0 20px -34px;
 	width: 42px;
 }
-
+#submitButton2{
+  height: 37px;
+  position: relative;
+  top: 9px;
+  left: -34px;
+}
 /* ----- Other id's ---- */
 #seperator{
 	height: 87px;
@@ -689,7 +700,9 @@ h1#pageTitle {
     &.partial-input {
       clear:none;
       display:inline-block;
-      width:50%;
+      margin-right:-4px;
+      max-width:calc(100% - 103px);
+      width:508px;
     }
   } /* end input[type="tel"] */
   textarea {
@@ -894,6 +907,9 @@ h1#pageTitle {
 	background-color: rgb(5,5,5);
 }
 
+.basicallyBlackBg p {
+  color:#fff;
+}
 
 /* ##### ResponsiveProductGrid Mods ##### */
 /* ----- Gradient Backgrounds ----- */
